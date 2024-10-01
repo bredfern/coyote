@@ -6,12 +6,11 @@ $arr = json_decode($result);
 $things = $arr->verses;
 $item = $things[0];
 
-$text = $item->text;
-$name = $item->book_name;
-$chap = $item->chapter;
-$verse = $item->verse;
+$txt = $item->text;
+$nam = $item->book_name;
+$cha = $item->chapter;
+$ver = $item->verse;
 
-echo "<b>" . $name . " Chapter " . $chap . " Verse " . $verse . "</b>";
-echo "<br />";
-echo $text;
+echo "<h4>" . $nam . " Chapter " . $cha . " Verse " . $ver . "</h4>";
+echo $txt;
 ?>
