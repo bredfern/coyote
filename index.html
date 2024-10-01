@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <title>DJ Coyote - Ask the Mystery</title>
+        <script src="https://unpkg.com/htmx.org"></script>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            rel="preload"
+            as="style"
+            href="/site.css"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1><a href="/" id="heading">DJ Coyote</a></h1>
+            </header>
+            <main>
+                <div class="centered">
+                    <picture>
+                        <a href="/"
+                            ><img src="coyote.svg" id="logo" alt="DJ Coyote"
+                        /></a>
+                    </picture>
+                </div>
+                <div class="holder">
+                    <button
+                        hx-get="get-bible-quote.php"
+                        hx-trigger="click"
+                        hx-swap="outerHTML"
+                    >
+                        Ask the Mystery
+                    </button>
+                </div>
+            </main>
+            <footer class="centered">&#169; 2024 Coyote Wang</footer>
+        </div>
+    </body>
+</html>
