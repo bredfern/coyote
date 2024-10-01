@@ -20,21 +20,24 @@ body {
     line-height: 1.5;
     font-size: 100%;
 }
+
 #logo {
     width: 18rem;
-    height: auto;
 }
+
 #heading {
     color: #fff;
     text-decoration: none;
     background-color: #000;
     width: 100%;
 }
+
 a,
 a:visited,
 a:active {
     color: #fff;
 }
+
 a.blk,
 a:visited.blk,
 a:active.blk {
@@ -43,9 +46,7 @@ a:active.blk {
 }
 
 a:hover {
-    text-decoration: none;
-    color: red;
-    font-weight: bold;
+    text-decoration: underline;
 }
 h1,
 h2,
@@ -58,15 +59,6 @@ h1 {
     font-size: 2rem;
     float: left;
     margin-left: 0.5rem;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-ul li {
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
 }
 
 @-webkit-keyframes bg-scrolling-reverse {
@@ -109,6 +101,7 @@ ul li {
         background-position: 3.125rem 3.125rem;
     }
 }
+
 .centered {
     text-align: center;
 }
@@ -117,20 +110,23 @@ ul li {
     color: #000;
     text-decoration: none;
 }
+
 .is-hidden {
     display: none;
 }
 
-.container {
+.container,
+.holder {
     margin-left: auto;
     margin-right: auto;
+}
+
+.container {
     min-height: 100vh;
     width: 100%;
 }
 
 .holder {
-    margin-left: auto;
-    margin-right: auto;
     width: 18rem;
 }
 
@@ -161,7 +157,6 @@ header {
 }
 
 main {
-    height: auto;
     padding: 0.6rem;
     width: 100%;
 }
