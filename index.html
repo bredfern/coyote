@@ -3,9 +3,12 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Pulls random quotes via server to server php call to a quote service."
+        />
         <link rel="shortcut icon" href="/favicon.ico" />
         <title>DJ Coyote</title>
-        <script src="https://unpkg.com/htmx.org"></script>
         <link
             rel="stylesheet"
             type="text/css"
@@ -23,7 +26,12 @@
                 <div class="centered">
                     <picture>
                         <a href="/"
-                            ><img src="/coyote.svg" id="logo" alt="Coyote Logo"
+                            ><img
+                                src="/coyote.svg"
+                                width="200"
+                                height="300"
+                                id="logo"
+                                alt="Coyote Logo"
                         /></a>
                     </picture>
                 </div>
@@ -39,5 +47,6 @@
             </main>
             <footer class="centered">&#169; 2024 Coyote Wang</footer>
         </div>
+        <script src="https://unpkg.com/htmx.org" defer></script>
     </body>
 </html>
